@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  font-family: "Agdasima", sans-serif;
+  background: linear-gradient(to right, white 50%, #e3e8fd 50%);
+}
+
+main {
+  display: grid;
+  grid-template-rows: auto min-content auto;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  min-height: 100vh;
+}
+
+article {
+  align-self: flex-end;
+  margin-bottom: 30px;
+}
+
+.info {
+  grid-row: 1/2;
+  grid-column: 1/2;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.vesikalik {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.name {
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  font-size: 5rem;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.about {
+  grid-row: 1/2;
+  grid-column: 2/3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.about > h1 {
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+  font-weight: lighter;
+}
+.about > p {
+  letter-spacing: 0.2rem;
+  text-align: center;
+  width: 70%;
+  font-size: 2rem;
+}
+
+header {
+  grid-row: 2/3;
+  grid-column: 1/3;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.mailme,
+.toportfolio {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  font-size: 4rem;
+  padding: 0px 5px;
+  transition: all 0.2s ease-in-out;
+}
+.mailme:hover,
+.toportfolio:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+.mailme:active,
+.toportfolio:active {
+  transform: scale(90%);
+}
+
+footer {
+  grid-row: 3/4;
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.svglogo {
+  width: 70px;
+  height: 70px;
+  transition: transform 0.3s ease-in-out;
+}
+.svglogo:hover {
+  transform: scale(120%);
+}
