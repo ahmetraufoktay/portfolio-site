@@ -1,5 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap");
-
+@font-face {
+  font-family: "Agdasima";
+  src: url(./assets/Agdasima-Regular.ttf);
+}
 * {
   padding: 0px;
   margin: 0px;
