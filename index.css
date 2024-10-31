@@ -17,7 +17,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto min-content auto;
   min-height: 100vh;
-  background: linear-gradient(to right, white 50%, rgb(217, 241, 255) 50%);
+  background: linear-gradient(to right, white 50%, #e3e8fd 50%);
 }
 
 article {
