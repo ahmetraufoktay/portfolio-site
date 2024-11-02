@@ -5,26 +5,20 @@
 * {
   padding: 0px;
   margin: 0px;
-  box-sizing: border-box;
-}
-
-.svglogo {
-  width: 70px;
-  height: 70px;
 }
 
 body {
-  font-family: "Agdasima";
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto min-content auto;
+  font-family: "Agdasima";
   min-height: 100vh;
-  background: linear-gradient(to right, white 50%, #e3e8fd 50%);
+  background: linear-gradient(to right, white 50%, rgb(230, 230, 250) 50%);
 }
-
-article {
-  align-self: flex-end;
-  margin-bottom: 30px;
+.vesikalik {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
 }
 
 .info {
@@ -32,60 +26,49 @@ article {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-}
-.info > h1 {
-  font-size: 5rem;
-  letter-spacing: 0.5rem;
-}
-.info > h2 {
-  font-size: 2rem;
+  gap: 30px;
 }
 
-.vesikalik {
-  width: 300px;
-  height: 300px;
-  border-radius: 15px;
+.info > h1 {
+  font-size: 80px;
+  letter-spacing: 4px;
+}
+.info > h2 {
+  font-size: 48px;
 }
 
 .about {
-  grid-column: 2/3;
-  grid-row: 1/2;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
 }
 .about > h1 {
-  font-size: 5rem;
+  font-size: 80px;
   font-weight: lighter;
-  letter-spacing: 0.5rem;
 }
 .about > p {
   width: 70%;
-  font-size: 2rem;
+  font-size: 32px;
   text-align: center;
-  letter-spacing: 0.2rem;
+  letter-spacing: 4px;
 }
 
 header {
   grid-row: 2/3;
   grid-column: 1/3;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
 }
 header > a {
-  font-size: 4rem;
-  text-decoration: none;
-  color: white;
+  font-size: 48px;
   background-color: black;
-  padding: 0px 5px;
-
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
   transition: all 0.3s ease-in-out;
 }
 header > a:hover {
@@ -94,21 +77,18 @@ header > a:hover {
 header > a:active {
   transform: scale(90%);
 }
-
 footer {
-  grid-column: 1/3;
-
   display: flex;
-  align-items: center;
   justify-content: center;
-
-  gap: 50px;
+  align-items: center;
+  grid-column: 1/3;
+  gap: 30px;
 }
-
-footer > a {
-  transition: all 300ms ease-in-out;
+.svglogo {
+  width: 75px;
+  height: 75px;
+  transition: all 0.3s ease-in-out;
 }
-
-footer > a:hover {
+.svglogo:hover {
   transform: scale(110%);
 }
